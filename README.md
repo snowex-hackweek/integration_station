@@ -1,6 +1,4 @@
-# Sample Project
-
-This is as an example on how teams can structure their project repositories. Thanks to Lindsey Heagey and Joachim Meyer for the template!
+# integration_station
 
 ## Files
 

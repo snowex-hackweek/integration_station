@@ -1,0 +1,35 @@
+Cryo2Sat
+--------------------
+Overall, the data overlap between ICESat-2 and Cryosat2 is limited. The main Cryo2Ice program occured for two weeks in July 2020, mostly in the polar regions.
+
+ICESat-2 ATL06 has a few data points in/near Grand Mesa in the past year, as does Cryosat2.
+    - ICESat-2 has ~6 granules that pass over Western Colorado in February 2020. Need to narrow this down with Icepyx.
+        - January 11th and February 12th are possible candidates.
+    - Cryosat2 data is tricky to visualize. Need to find out when it passes over Grand Mesa (and how to find out).
+
+
+Icepyx
+-------------------
+Basically designed to simplify the data querying/downloading process for ICESat-2.
+
+With the package, three functions are needed to get ICESat-2 data:
+    ipx.Query(short_name, spatial_extent, date_range)
+        short_name: String for dataset short name (e.g. 'ATL06')
+        spatial_extent: Bounding box of coordinates ([-90,-180,90,180])
+        date_range: Set of strings for the sate range (['yyyy-mm-dd', yyyy-mm-dd'])
+
+    region.earthdata_login(uid, email)
+        uid: String for Earthdata username
+        email: String for personal email
+
+    region.download_granules(path)
+        path: String for the directory to download data into
+
+
+ASO
+-----------------------
+Performed flights for SnowEx over Grand Mesa.
+
+Some data is currently available from February 2020, specifically for February 1-2 and 13th.
+
+Both dates have TIF files for snow depth, SWE, and snow-free DEMs over Grand Mesa.

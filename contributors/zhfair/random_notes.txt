@@ -3,7 +3,8 @@ Cryo2Sat
 Overall, the data overlap between ICESat-2 and Cryosat2 is limited. The main Cryo2Ice program occured for two weeks in July 2020, mostly in the polar regions.
 
 ICESat-2 ATL06 has a few data points in/near Grand Mesa in the past year, as does Cryosat2.
-    - Need to find when both data sets go over Grand Mesa.
+    - ICESat-2 has ~6 granules that pass over Western Colorado in February 2020. Need to narrow this down with Icepyx.
+    - Cryosat2 data is tricky to visualize. Need to find out when it passes over Grand Mesa (and how to find out).
 
 
 Icepyx

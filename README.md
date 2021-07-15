@@ -23,31 +23,56 @@ Helper utilities that are shared with the team
 # Recommended content for your README.md file:
 
 ## Project Summary
+Project repistory to develop tools and framework to easily integrate available in situ datasets over Grand Mesa for use as calibration/validation for remote sensing datasets and spatially-distributed models. Emphasis on snow depth (and potentially SWE) measurements.
 
 ### Project Title
 
-Brief title describing the proposed work.
+Integration_station: Towards a sandbox for SnowEx datasets
 
 ### Collaborators on this project
 
-List all participants on the project. Choose one team member to act as project lead, and identify one hackweek organizer as the data science lead.
+* [Max Stevens](https://github.com/maximusjstevens)
+* [Mitch Creelman](https://github.com/mcreelma)
+* [Seth Vanderwilt](https://github.com/sethv)
+* [Shad O'Neel](https://github.com/shad)
+* [Ryan Crumley](https://github.com/ryanlcrumley)
+* [Gifty Attiah](https://github.com/geattiah)
+* [Tri Datta](https://github.com/tridatta)
+* [Mansi Joshi](https://github.com/mansi278)
+* [Jessica Scheick](https://github.com/jessicas11)
+* [Shashank Bhushan](https://github.com/shashankBice) (Data science helper)
+* [Michelle Hu](https://github.com/jmichellehu) (Project Lead)
 
 ### The problem
 
-What problem are you going to explore? Provide a few sentences. If this is a technical exploration of software or data science methods, explain why this work is important in a broader context.
+The snowex capaign(s) produce a treasure trove of datasets measuring different physical parameters such as snow depth, density, temperatures, ASO LiDAR etc. From a purely exploratory measure, we can use this awesome treasure trove to validate and calibrate satellite remote sensing and model derived outputs. The calibration 
 
 ### Application Example
 
 List one specific application of this work.
 
 ### Sample data
+* SnowEx
+    * Snow pits https://nsidc.org/data/SNEX20_GM_SP/versions/1
+    * Depth transects https://nsidc.org/data/SNEX20_SD/versions/1, depth spirals
+    * ASO Lidar, USGS 3DEP
+    * ?Time lapse camera snow depths (gives high time resolution perhaps)?
+    * GPR depths
+* External
+    * IS2
+    * CryoSat
+    * RS imagery
+    * Weather station data (SNOTEL, other AWS bits)
 
-If you already have some data to explore, briefly describe it here (size, format, how to access).
+
 
 ### Specific Questions
 
-List the specific tasks you want to accomplish or research questions you want to answer.
-
+Some specifics questions(tasks) which we want to answer(accomplish) during the hackweek:
+* Query: run through tutorial, work on extracting via bounding box, work towards developing streamlined functions for SnowEx datasets
+* Query and fetch external datasets (IceSat-2/Snotel)
+* Preprocessing: Alignment of elevation datasets
+* Comparison of datasets, exploring interpolation techniques to create rasters from point datasets.
 ### Existing methods
 
 How would you or others traditionally try to address this problem?

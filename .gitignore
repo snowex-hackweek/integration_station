@@ -110,3 +110,4 @@ venv.bak/
 *.nc
 *.tif
 *.zip
+*.DS_store
